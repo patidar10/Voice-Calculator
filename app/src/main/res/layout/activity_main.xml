@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#2A512F"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="User Info" />
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Your Name"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/editTextPhone"
+
+            android:ems="10"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+
+            android:hint="Mobile No."
+            android:maxLines="1"
+
+            android:textAlignment="center"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/uservillage"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+
+            android:hint="Village/Colony"
+            android:maxLines="1"
+
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/usercity"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+
+            android:hint="City"
+            android:maxLines="1"
+
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/userdistrict"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+
+            android:hint="District"
+            android:maxLines="1"
+
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+        <RadioGroup
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonClicked"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonfarmer"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Farmer"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtontrader"
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trader"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/usertradertype"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:hint="Traded Crops (optional)"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <Button
+            android:id="@+id/buttonsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:background="@drawable/verifybtn"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:text="Sign Up With Google" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
